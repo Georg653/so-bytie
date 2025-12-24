@@ -1,14 +1,20 @@
 import React from 'react';
 import './Footer.css';
 import logoWhite from '../../assets/logo2.svg';
+import secondaryLogo from '../../assets/ме-лого-06-removebg-preview.png';
 import instIcon from '../../assets/Inst.svg';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer__container">
-        <div className="footer__logo">
-          <img src={logoWhite} alt="СО-БЫТИЕ" />
+        <div className="footer__logo-block">
+          <div className="footer__logo">
+            <img src={logoWhite} alt="СО-БЫТИЕ" className="footer__logo-main" />
+          </div>
+          <div className="footer__logo-sec">
+            <img src={secondaryLogo} alt="Партнер" className="footer__logo-secondary" />
+          </div>
         </div>
 
         <div className="footer__nav">
@@ -24,7 +30,7 @@ const Footer = () => {
 
         <div className="footer__contacts">
           <h4>Контакты</h4>
-          <p>Слава</p>
+          <p>Вячеслав</p>
           <a href="tel:+375293089690">+375 (29) 308-96-90</a>
         </div>
 

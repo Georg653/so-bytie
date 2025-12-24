@@ -6,6 +6,7 @@ import HowToHelp from './sections/HowToHelp/HowToHelp';
 import FAQ from './sections/FAQ/FAQ';
 import Institutions from './sections/Institutions/Institutions';
 import CollectionPoints from './sections/CollectionPoints/CollectionPoints';
+import Partners from './sections/Partners/Partners'; 
 import Donation from './sections/Donation/Donation';
 import Footer from './sections/Footer/Footer';
 import Decorations from './components/Decorations/Decorations';
@@ -23,6 +24,7 @@ function App() {
           <FAQ />
           <Institutions />
           <CollectionPoints />
+          <Partners /> 
           <Donation />
         </div>
       </main>
