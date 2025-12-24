@@ -30,7 +30,7 @@ const Footer = () => {
 
         <div className="footer__contacts">
           <h4>Контакты</h4>
-          <p>Вячеслав</p>
+          <p>Слава</p>
           <a href="tel:+375293089690">+375 (29) 308-96-90</a>
         </div>
 
