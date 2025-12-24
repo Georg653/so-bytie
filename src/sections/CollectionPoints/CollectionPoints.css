@@ -1,0 +1,157 @@
+.points {
+  padding: 40px 0 40px 0;
+  position: relative;
+}
+
+.points__white-block {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.points__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.points__star {
+  width: 70px;
+  height: 70px;
+}
+
+.points__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.points__card {
+  background-color: #DEEBEB;
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.points__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.points__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.points__icon {
+  width: 28px;
+  height: 28px;
+}
+
+.points__address {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000000;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.points__time {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  color: #000000;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  .points__white-block {
+    padding: 40px 25px;
+    border-radius: 40px;
+  }
+
+  .points__title {
+    font-size: 32px;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .points__star {
+    width: 45px;
+    height: 45px;
+  }
+
+  .points__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .points__card {
+    padding: 25px;
+    min-height: auto;
+  }
+
+  .points__card-title {
+    font-size: 20px;
+  }
+
+  .points__address {
+    font-size: 16px;
+  }
+
+  .points__time {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .points__white-block {
+    padding: 30px 15px;
+    border-radius: 30px;
+  }
+
+  .points__title {
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  .points__star {
+    width: 30px;
+    height: 30px;
+  }
+
+  .points__card {
+    padding: 20px;
+  }
+
+  .points__card-title {
+    font-size: 18px;
+  }
+
+  .points__address {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .points__time {
+    font-size: 14px;
+  }
+
+  .points__icon {
+    width: 22px;
+    height: 22px;
+  }
+}

@@ -1,0 +1,39 @@
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.hero__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 5px 0;
+  }
+  
+  .hero__image {
+    max-width: 100%;
+  }
+}

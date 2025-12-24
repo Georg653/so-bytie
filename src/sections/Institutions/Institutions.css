@@ -1,0 +1,255 @@
+.inst {
+  padding: 40px 0 40px 0;
+  position: relative;
+}
+
+.inst__white-block {
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.inst__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.inst__star-title {
+  width: 70px;
+  height: 70px;
+}
+
+.inst__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.inst__card {
+  border: 2px solid #670627;
+  border-radius: 30px;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.inst__card:hover {
+  background-color: #fdf2f5;
+  transform: translateY(-2px);
+}
+
+.inst__card-star {
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+.inst__card span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.3;
+}
+
+.inst__extra-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.inst__extra-container.open {
+  grid-template-rows: 1fr;
+}
+
+.inst__extra-inner {
+  min-height: 0;
+}
+
+.inst__grid--extra {
+  padding-top: 20px;
+}
+
+.inst__more-wrapper {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.inst__more-btn {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.inst__more-btn span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #670627;
+  text-transform: uppercase;
+}
+
+.inst__more-arrow {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+.inst__more-arrow.rotate {
+  transform: rotate(0deg);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 1, 7, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 1000px;
+  padding: 50px;
+  border-radius: 40px;
+  position: relative;
+  text-align: center;
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modal-close img {
+  width: 25px;
+  height: 25px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  padding: 0 20px;
+  line-height: 1.4;
+}
+
+.modal-desc {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 35px;
+}
+
+.modal-btn {
+  display: inline-block;
+  background-color: #670627;
+  color: #ffffff;
+  padding: 15px 40px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.modal-btn:hover {
+  background-color: #4d041d;
+}
+
+@media (max-width: 1024px) {
+  .inst__white-block {
+    padding: 30px 20px;
+    border-radius: 40px;
+  }
+
+  .inst__title {
+    font-size: 32px;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .inst__star-title {
+    width: 40px;
+    height: 40px;
+  }
+
+  .inst__grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .inst__grid--extra {
+    padding-top: 15px;
+  }
+
+  .inst__card {
+    padding: 15px 20px;
+    border-radius: 20px;
+  }
+
+  .inst__card span {
+    font-size: 16px;
+  }
+
+  .inst__card-star {
+    width: 25px;
+    height: 25px;
+  }
+
+  .inst__more-wrapper {
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
+  .inst__extra-container {
+    grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .inst__title {
+    font-size: 23px;
+    gap: 10px;
+  }
+
+  .inst__star-title {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,126 @@
+.about {
+  padding: 20px 0 3px 0;
+  position: relative;
+}
+
+.about__content {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.about__white-block {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 60px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.about__star {
+  width: 90px;
+  height: 90px;
+}
+
+.about__text {
+  text-align: left;
+}
+
+.about__text p {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.about__blue-block {
+  background: linear-gradient(90deg, rgb(133, 10, 51) 0%, #F5FFFF 10%, #F5FFFF 100%);
+  padding: 70px 60px;
+  border-left: 15px solid #670627;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.about__blue-block p {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+/* АДАПТИВ ДЛЯ МОБИЛОК */
+@media (max-width: 1024px) {
+  .about__white-block {
+    padding: 30px 25px; /* Уменьшили внутренние отступы */
+    border-radius: 40px;
+  }
+
+  .about__title {
+    font-size: 32px; /* Уменьшили заголовок */
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .about__star {
+    width: 45px; /* Уменьшили звезды */
+    height: 45px;
+  }
+
+  .about__text p {
+    font-size: 18px; /* Уменьшили основной текст */
+    line-height: 1.6;
+  }
+
+  .about__blue-block {
+    padding: 40px 20px;
+    margin-top: 30px;
+    border-left: 8px solid #670627; /* Сделали полоску сбоку тоньше */
+  }
+
+  .about__blue-block p {
+    font-size: 18px; /* Уменьшили текст в блоке призыва */
+  }
+}
+
+@media (max-width: 480px) {
+  .about__white-block {
+    padding: 25px 15px;
+    border-radius: 30px;
+  }
+
+  .about__title {
+    font-size: 24px; /* Заголовок еще меньше для телефонов */
+    gap: 10px;
+  }
+
+  .about__star {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about__text p {
+    font-size: 16px; /* Стандартный читабельный размер для мобилок */
+    text-align: center; /* На мобилках текст по центру часто смотрится лучше */
+  }
+
+  .about__blue-block {
+    padding: 30px 15px;
+  }
+
+  .about__blue-block p {
+    font-size: 16px;
+  }
+}

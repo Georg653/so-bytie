@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #670627 transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #670627;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4d041d;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 80px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-with-bg {
+  background-image: url('../assets/Background.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: repeat-y;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero, .about, .how-to, .faq, .inst, .points, .donation {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}

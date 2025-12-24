@@ -1,0 +1,53 @@
+.decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.star-deco {
+  position: absolute;
+  width: 550px; 
+  height: auto;
+  opacity: 1;
+}
+
+.star-1 {
+  top: 2%;
+  left: -200px;
+  transform: rotate(-15deg);
+}
+
+.star-2 {
+  top: 18%;
+  right: -220px;
+  transform: rotate(25deg);
+}
+
+.star-3 {
+  top: 38%;
+  left: -180px;
+  transform: rotate(-10deg);
+}
+
+.star-4 {
+  top: 55%;
+  right: -200px;
+  transform: rotate(35deg);
+}
+
+.star-5 {
+  top: 78%;
+  left: -210px;
+  transform: rotate(10deg);
+}
+
+.star-6 {
+  top: 92%;
+  right: -150px;
+  transform: rotate(-20deg);
+}
