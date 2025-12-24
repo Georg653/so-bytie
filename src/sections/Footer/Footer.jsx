@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__social">
-          <h4>Мы в соцсетях</h4>
+          
           <a href="https://www.instagram.com/so.bytie/" target="_blank" rel="noreferrer" className="footer__inst">
             <img src={instIcon} alt="Instagram" />
             <span>Instagram</span>
